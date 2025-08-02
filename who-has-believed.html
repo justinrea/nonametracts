@@ -13,182 +13,299 @@
     <meta property="og:title" content="Who Has Believed - Gospel Tract Based on Isaiah 53">
     <meta property="og:description" content="A powerful gospel tract exploring salvation through Isaiah 53. Free download available.">
     
-    <link rel="stylesheet" href="styles.css">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-blue': '#2c3e50',
+                        'brand-light-blue': '#3498db',
+                        'brand-red': '#e74c3c',
+                        'brand-red-dark': '#c0392b'
+                    }
+                }
+            }
+        }
+    </script>
+    
     <link rel="canonical" href="https://nonametracts.com/who-has-believed.html">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📖</text></svg>">
 </head>
-<body>
-    <header>
-        <nav>
+<body class="font-sans leading-relaxed text-gray-800 bg-white">
+    <!-- Header -->
+    <header class="bg-brand-blue text-white py-4 fixed w-full top-0 z-50 shadow-lg transition-transform duration-300">
+        <nav class="flex justify-between items-center max-w-6xl mx-auto px-8">
             <div class="logo">
-                <h1><a href="index.html">No Name Tracts</a></h1>
+                <h1 class="text-3xl font-semibold">
+                    <a href="index.html" class="text-white hover:text-brand-light-blue transition-colors duration-300">No Name Tracts</a>
+                </h1>
             </div>
-            <ul class="nav-links">
-                <li><a href="index.html#home">Home</a></li>
-                <li><a href="index.html#about">About</a></li>
-                <li><a href="index.html#tracts">Tracts</a></li>
-                <li><a href="index.html#contact">Contact</a></li>
+            <ul class="hidden md:flex space-x-8">
+                <li><a href="index.html#home" class="font-medium transition-colors duration-300 hover:text-brand-light-blue">Home</a></li>
+                <li><a href="index.html#about" class="font-medium transition-colors duration-300 hover:text-brand-light-blue">About</a></li>
+                <li><a href="index.html#tracts" class="font-medium transition-colors duration-300 hover:text-brand-light-blue">Tracts</a></li>
+                <li><a href="index.html#contact" class="font-medium transition-colors duration-300 hover:text-brand-light-blue">Contact</a></li>
             </ul>
+            <!-- Mobile menu button -->
+            <button class="md:hidden">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
         </nav>
     </header>
 
-    <main>
-        <section class="tract-detail-hero">
-            <div class="container">
-                <nav class="breadcrumb">
-                    <a href="index.html">Home</a> → <a href="index.html#tracts">Tracts</a> → <span>Who Has Believed</span>
+    <main class="mt-20">
+        <!-- Hero Section -->
+        <section class="bg-gradient-to-br from-indigo-500 via-purple-600 to-purple-700 text-white py-32 px-8">
+            <div class="max-w-6xl mx-auto">
+                <nav class="text-sm mb-4 opacity-90">
+                    <a href="index.html" class="hover:underline">Home</a> → 
+                    <a href="index.html#tracts" class="hover:underline">Tracts</a> → 
+                    <span>Who Has Believed</span>
                 </nav>
-                <h1>Who Has Believed</h1>
-                <p class="tract-subtitle">A Gospel Tract Based on Isaiah 53</p>
+                <h1 class="text-5xl md:text-6xl font-bold mb-4">Who Has Believed</h1>
+                <p class="text-xl md:text-2xl opacity-90">A Gospel Tract Based on Isaiah 53</p>
             </div>
         </section>
 
-        <section class="tract-details">
-            <div class="container">
-                <div class="tract-layout">
-                    <div class="tract-preview-large">
-                        <img src="images/who-has-believed.png" alt="Who Has Believed tract preview" loading="lazy">
+        <!-- Tract Details -->
+        <section class="py-16 px-8">
+            <div class="max-w-6xl mx-auto">
+                <div class="grid lg:grid-cols-5 gap-12 mb-16">
+                    <!-- Tract Preview -->
+                    <div class="lg:col-span-2">
+                        <div class="sticky top-24">
+                            <img src="images/who-has-believed.png" alt="Who Has Believed tract preview" 
+                                 class="w-full rounded-xl shadow-2xl" loading="lazy">
+                        </div>
                     </div>
                     
-                    <div class="tract-info">
-                        <div class="tract-description">
-                            <h2>About This Tract</h2>
-                            <p>This powerful gospel tract explores the profound message of salvation found in Isaiah 53. Through careful exposition of this messianic prophecy, readers are led to understand the suffering servant's role in our redemption and the importance of believing in Jesus Christ.</p>
+                    <!-- Tract Info -->
+                    <div class="lg:col-span-3 space-y-8">
+                        <div>
+                            <h2 class="text-3xl font-bold text-brand-blue mb-6">About This Tract</h2>
+                            <div class="prose prose-lg max-w-none text-gray-700 space-y-4">
+                                <p>This powerful gospel tract explores the profound message of salvation found in Isaiah 53. Through careful exposition of this messianic prophecy, readers are led to understand the suffering servant's role in our redemption and the importance of believing in Jesus Christ.</p>
+                                
+                                <p>The tract presents the gospel message clearly and compassionately, making it perfect for personal evangelism, church outreach programs, and sharing with friends and family who need to hear the good news.</p>
+                            </div>
                             
-                            <p>The tract presents the gospel message clearly and compassionately, making it perfect for personal evangelism, church outreach programs, and sharing with friends and family who need to hear the good news.</p>
+                            <div class="mt-8">
+                                <h3 class="text-xl font-bold text-brand-blue mb-4">Key Scripture Focus</h3>
+                                <blockquote class="bg-gray-50 border-l-4 border-brand-light-blue p-6 rounded-r-lg italic text-lg text-gray-700">
+                                    "Who has believed our message and to whom has the arm of the Lord been revealed?" - Isaiah 53:1
+                                </blockquote>
+                            </div>
                             
-                            <h3>Key Scripture Focus</h3>
-                            <blockquote>
-                                "Who has believed our message and to whom has the arm of the Lord been revealed?" - Isaiah 53:1
-                            </blockquote>
-                            
-                            <h3>What's Inside</h3>
-                            <ul>
-                                <li>Clear explanation of Isaiah 53's messianic prophecy</li>
-                                <li>The significance of Christ's suffering for our salvation</li>
-                                <li>Personal application and call to faith</li>
-                                <li>Scripture references throughout</li>
-                                <li>Gospel presentation suitable for all audiences</li>
-                            </ul>
+                            <div class="mt-8">
+                                <h3 class="text-xl font-bold text-brand-blue mb-4">What's Inside</h3>
+                                <ul class="space-y-2 text-gray-700">
+                                    <li class="flex items-start gap-3">
+                                        <span class="text-green-500 mt-1">•</span>
+                                        Clear explanation of Isaiah 53's messianic prophecy
+                                    </li>
+                                    <li class="flex items-start gap-3">
+                                        <span class="text-green-500 mt-1">•</span>
+                                        The significance of Christ's suffering for our salvation
+                                    </li>
+                                    <li class="flex items-start gap-3">
+                                        <span class="text-green-500 mt-1">•</span>
+                                        Personal application and call to faith
+                                    </li>
+                                    <li class="flex items-start gap-3">
+                                        <span class="text-green-500 mt-1">•</span>
+                                        Scripture references throughout
+                                    </li>
+                                    <li class="flex items-start gap-3">
+                                        <span class="text-green-500 mt-1">•</span>
+                                        Gospel presentation suitable for all audiences
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                         
-                        <div class="tract-specifications">
-                            <h3>Specifications</h3>
-                            <div class="spec-grid">
-                                <div class="spec-item">
-                                    <span class="spec-label">Size:</span>
-                                    <span class="spec-value">3.5" × 5.5"</span>
+                        <!-- Specifications -->
+                        <div class="bg-gray-50 rounded-xl p-6">
+                            <h3 class="text-xl font-bold text-brand-blue mb-4">Specifications</h3>
+                            <div class="grid grid-cols-2 gap-4">
+                                <div class="flex justify-between py-2 border-b border-gray-200">
+                                    <span class="font-medium text-gray-600">Size:</span>
+                                    <span class="text-brand-blue font-medium">3.5" × 5.5"</span>
                                 </div>
-                                <div class="spec-item">
-                                    <span class="spec-label">Format:</span>
-                                    <span class="spec-value">PDF</span>
+                                <div class="flex justify-between py-2 border-b border-gray-200">
+                                    <span class="font-medium text-gray-600">Format:</span>
+                                    <span class="text-brand-blue font-medium">PDF</span>
                                 </div>
-                                <div class="spec-item">
-                                    <span class="spec-label">Pages:</span>
-                                    <span class="spec-value">Multi-page</span>
+                                <div class="flex justify-between py-2 border-b border-gray-200">
+                                    <span class="font-medium text-gray-600">Pages:</span>
+                                    <span class="text-brand-blue font-medium">Multi-page</span>
                                 </div>
-                                <div class="spec-item">
-                                    <span class="spec-label">Type:</span>
-                                    <span class="spec-value">Mini Booklet</span>
+                                <div class="flex justify-between py-2 border-b border-gray-200">
+                                    <span class="font-medium text-gray-600">Type:</span>
+                                    <span class="text-brand-blue font-medium">Mini Booklet</span>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 
-                <div class="download-section">
-                    <h2>Download Options</h2>
-                    <div class="download-cards">
-                        <div class="download-card">
-                            <div class="download-card-icon">📄</div>
-                            <h3>Standard PDF</h3>
-                            <p>Perfect for digital viewing or reviewing page order before printing. Use this version to see how the tract flows and reads.</p>
-                            <a href="downloads/Who Has Believed Final.pdf" class="download-btn primary" download>
-                                <span class="download-icon">⬇</span>
+                <!-- Download Section -->
+                <div class="mb-16">
+                    <h2 class="text-3xl font-bold text-brand-blue mb-8 text-center">Download Options</h2>
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div class="bg-white rounded-xl shadow-lg border border-gray-100 p-8 text-center hover:shadow-2xl transition-shadow duration-300">
+                            <div class="text-6xl mb-4">📄</div>
+                            <h3 class="text-xl font-bold text-brand-blue mb-4">Standard PDF</h3>
+                            <p class="text-gray-600 mb-6 leading-relaxed">Perfect for digital viewing or reviewing page order before printing. Use this version to see how the tract flows and reads.</p>
+                            <a href="downloads/Who Has Believed Final.pdf" class="inline-flex items-center gap-2 bg-brand-light-blue hover:bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg" download>
+                                <span>⬇</span>
                                 Download Standard PDF
                             </a>
                         </div>
                         
-                        <div class="download-card">
-                            <div class="download-card-icon">🖨</div>
-                            <h3>Print-Ready (Imposed)</h3>
-                            <p>Specially arranged for creating mini booklets. Pages are positioned for proper assembly after printing and folding.</p>
-                            <a href="impositions/Who Has Believed Final Imposed.pdf" class="download-btn secondary" download>
-                                <span class="download-icon">🖨</span>
+                        <div class="bg-white rounded-xl shadow-lg border border-gray-100 p-8 text-center hover:shadow-2xl transition-shadow duration-300">
+                            <div class="text-6xl mb-4">🖨</div>
+                            <h3 class="text-xl font-bold text-brand-blue mb-4">Print-Ready (Imposed)</h3>
+                            <p class="text-gray-600 mb-6 leading-relaxed">Specially arranged for creating mini booklets. Pages are positioned for proper assembly after printing and folding.</p>
+                            <a href="impositions/Who Has Believed Final Imposed.pdf" class="inline-flex items-center gap-2 bg-gray-600 hover:bg-gray-700 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg" download>
+                                <span>🖨</span>
                                 Download Print-Ready
                             </a>
                         </div>
                     </div>
                 </div>
                 
-                <div class="printing-guide">
-                    <h2>📋 Complete Printing & Assembly Guide</h2>
+                <!-- Printing Guide -->
+                <div class="bg-gray-50 rounded-xl p-8 mb-16">
+                    <h2 class="text-3xl font-bold text-brand-blue mb-8 text-center">📋 Complete Printing & Assembly Guide</h2>
                     
-                    <div class="printing-steps">
-                        <div class="step-card">
-                            <div class="step-number">1</div>
-                            <div class="step-content">
-                                <h3>Review First</h3>
-                                <p>Download and review the <strong>Standard PDF</strong> to ensure the pages are in the correct order and the content reads properly.</p>
+                    <div class="space-y-6 mb-8">
+                        <div class="bg-white rounded-lg p-6 shadow-sm flex items-start gap-4">
+                            <div class="bg-brand-light-blue text-white w-10 h-10 rounded-full flex items-center justify-center font-bold text-lg flex-shrink-0">1</div>
+                            <div>
+                                <h3 class="text-lg font-bold text-brand-blue mb-2">Review First</h3>
+                                <p class="text-gray-700">Download and review the <strong>Standard PDF</strong> to ensure the pages are in the correct order and the content reads properly.</p>
                             </div>
                         </div>
                         
-                        <div class="step-card">
-                            <div class="step-number">2</div>
-                            <div class="step-content">
-                                <h3>Print Setup</h3>
-                                <p>Use the <strong>Print-Ready (Imposed)</strong> version with these printer settings:</p>
-                                <ul>
-                                    <li>Quality 8.5" × 11" paper</li>
-                                    <li><strong>"Fit to printable area"</strong></li>
-                                    <li><strong>"Print on both sides"</strong> (duplex)</li>
-                                    <li><strong>"Flip on long edge"</strong></li>
-                                    <li><strong>"Collate"</strong> enabled</li>
+                        <div class="bg-white rounded-lg p-6 shadow-sm flex items-start gap-4">
+                            <div class="bg-brand-light-blue text-white w-10 h-10 rounded-full flex items-center justify-center font-bold text-lg flex-shrink-0">2</div>
+                            <div>
+                                <h3 class="text-lg font-bold text-brand-blue mb-2">Print Setup</h3>
+                                <p class="text-gray-700 mb-3">Use the <strong>Print-Ready (Imposed)</strong> version with these printer settings:</p>
+                                <ul class="space-y-1 text-gray-700 ml-4">
+                                    <li class="flex items-start gap-2">
+                                        <span class="text-brand-light-blue mt-1">•</span>
+                                        Quality 8.5" × 11" paper
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <span class="text-brand-light-blue mt-1">•</span>
+                                        <strong>"Fit to printable area"</strong>
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <span class="text-brand-light-blue mt-1">•</span>
+                                        <strong>"Print on both sides"</strong> (duplex)
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <span class="text-brand-light-blue mt-1">•</span>
+                                        <strong>"Flip on long edge"</strong>
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <span class="text-brand-light-blue mt-1">•</span>
+                                        <strong>"Collate"</strong> enabled
+                                    </li>
                                 </ul>
                             </div>
                         </div>
                         
-                        <div class="step-card">
-                            <div class="step-number">3</div>
-                            <div class="step-content">
-                                <h3>Cut, Fold & Staple</h3>
-                                <p>After printing:</p>
-                                <ul>
-                                    <li>Cut along the guidelines to separate booklets</li>
-                                    <li>Fold each booklet in half along the center line</li>
-                                    <li>Staple in the center fold to secure pages</li>
+                        <div class="bg-white rounded-lg p-6 shadow-sm flex items-start gap-4">
+                            <div class="bg-brand-light-blue text-white w-10 h-10 rounded-full flex items-center justify-center font-bold text-lg flex-shrink-0">3</div>
+                            <div>
+                                <h3 class="text-lg font-bold text-brand-blue mb-2">Cut, Fold & Staple</h3>
+                                <p class="text-gray-700 mb-3">After printing:</p>
+                                <ul class="space-y-1 text-gray-700 ml-4">
+                                    <li class="flex items-start gap-2">
+                                        <span class="text-brand-light-blue mt-1">•</span>
+                                        Cut along the guidelines to separate booklets
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <span class="text-brand-light-blue mt-1">•</span>
+                                        Fold each booklet in half along the center line
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <span class="text-brand-light-blue mt-1">•</span>
+                                        Staple in the center fold to secure pages
+                                    </li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                     
-                    <div class="printing-tip">
-                        <strong>💡 Pro Tip:</strong> The imposed version arranges pages so that when folded and stapled, the tract reads in the correct order. Always use the standard PDF first to verify content before printing multiple copies.
+                    <div class="bg-green-50 border border-green-200 rounded-lg p-4">
+                        <p class="text-green-800"><strong>💡 Pro Tip:</strong> The imposed version arranges pages so that when folded and stapled, the tract reads in the correct order. Always use the standard PDF first to verify content before printing multiple copies.</p>
                     </div>
                 </div>
                 
-                <div class="usage-section">
-                    <h2>Usage & Distribution</h2>
-                    <div class="usage-cards">
-                        <div class="usage-allowed">
-                            <h3>✅ Encouraged Uses</h3>
-                            <ul>
-                                <li>Personal evangelism and witnessing</li>
-                                <li>Church outreach programs</li>
-                                <li>Street evangelism and tract distribution</li>
-                                <li>Sharing with friends, family, and coworkers</li>
-                                <li>Digital sharing via email or social media</li>
-                                <li>Bulk printing for ministry use</li>
+                <!-- Usage Section -->
+                <div class="mb-16">
+                    <h2 class="text-3xl font-bold text-brand-blue mb-8 text-center">Usage & Distribution</h2>
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div class="bg-white border-2 border-green-200 rounded-xl p-8">
+                            <h3 class="text-xl font-bold text-green-700 mb-6 flex items-center gap-2">
+                                <span class="text-2xl">✅</span> Encouraged Uses
+                            </h3>
+                            <ul class="space-y-3 text-gray-700">
+                                <li class="flex items-start gap-3">
+                                    <span class="text-green-500 mt-1">•</span>
+                                    Personal evangelism and witnessing
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <span class="text-green-500 mt-1">•</span>
+                                    Church outreach programs
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <span class="text-green-500 mt-1">•</span>
+                                    Street evangelism and tract distribution
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <span class="text-green-500 mt-1">•</span>
+                                    Sharing with friends, family, and coworkers
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <span class="text-green-500 mt-1">•</span>
+                                    Digital sharing via email or social media
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <span class="text-green-500 mt-1">•</span>
+                                    Bulk printing for ministry use
+                                </li>
                             </ul>
                         </div>
                         
-                        <div class="usage-restricted">
-                            <h3>❌ Please Don't</h3>
-                            <ul>
-                                <li>Modify or alter the content</li>
-                                <li>Sell or use for commercial purposes</li>
-                                <li>Remove or change attribution</li>
-                                <li>Use for purposes contrary to the Gospel</li>
+                        <div class="bg-white border-2 border-red-200 rounded-xl p-8">
+                            <h3 class="text-xl font-bold text-red-700 mb-6 flex items-center gap-2">
+                                <span class="text-2xl">❌</span> Please Don't
+                            </h3>
+                            <ul class="space-y-3 text-gray-700">
+                                <li class="flex items-start gap-3">
+                                    <span class="text-red-500 mt-1">•</span>
+                                    Modify or alter the content
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <span class="text-red-500 mt-1">•</span>
+                                    Sell or use for commercial purposes
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <span class="text-red-500 mt-1">•</span>
+                                    Remove or change attribution
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <span class="text-red-500 mt-1">•</span>
+                                    Use for purposes contrary to the Gospel
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -197,8 +314,9 @@
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2025 No Name Tracts. All rights reserved. Sharing the Gospel through literature.</p>
+    <!-- Footer -->
+    <footer class="bg-brand-blue text-white py-8 px-8 text-center">
+        <p class="text-gray-300">&copy; 2025 No Name Tracts. All rights reserved. Sharing the Gospel through literature.</p>
     </footer>
 
     <script src="script.js"></script>

@@ -186,16 +186,28 @@ main {
     flex-direction: column;
 }
 
-.tract-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
-}
-
 .tract-card.coming-soon {
     background: #f8f9fa;
     border-style: dashed;
     border-color: #ddd;
     padding: 2rem;
+}
+
+.tract-card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.tract-card-link:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+.tract-card-link:hover .tract-card {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
 }
 
 .tract-preview {

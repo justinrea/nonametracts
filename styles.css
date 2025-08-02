@@ -39,6 +39,15 @@ nav {
     font-weight: 600;
 }
 
+.logo h1 a {
+    color: white;
+    text-decoration: none;
+}
+
+.logo h1 a:hover {
+    color: #3498db;
+}
+
 .nav-links {
     display: flex;
     list-style: none;
@@ -260,6 +269,11 @@ main {
     font-weight: 500;
 }
 
+.tract-scripture {
+    background: #fff3e0 !important;
+    color: #e65100 !important;
+}
+
 .tract-size {
     background: #e8f5e8 !important;
     color: #27ae60 !important;
@@ -268,6 +282,341 @@ main {
 .tract-status {
     background: #fff3cd !important;
     color: #856404 !important;
+}
+
+.view-tract-btn {
+    background: #3498db;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 6px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    text-align: center;
+    width: 100%;
+}
+
+.view-tract-btn:hover {
+    background: #2980b9;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);
+}
+
+.view-icon {
+    font-size: 1.1rem;
+}
+
+/* Dedicated Tract Page Styles */
+.tract-detail-hero {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 8rem 2rem 4rem;
+    margin-top: 80px;
+}
+
+.breadcrumb {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    opacity: 0.9;
+}
+
+.breadcrumb a {
+    color: white;
+    text-decoration: none;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+.tract-detail-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+.tract-subtitle {
+    font-size: 1.3rem;
+    opacity: 0.9;
+}
+
+.tract-details {
+    padding: 4rem 2rem;
+}
+
+.tract-layout {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 4rem;
+    margin-bottom: 4rem;
+}
+
+.tract-preview-large {
+    position: sticky;
+    top: 100px;
+    height: fit-content;
+}
+
+.tract-preview-large img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.tract-description h2,
+.tract-description h3 {
+    color: #2c3e50;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.tract-description h2 {
+    font-size: 2rem;
+    margin-top: 0;
+}
+
+.tract-description p {
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+}
+
+.tract-description ul {
+    color: #555;
+    padding-left: 1.5rem;
+    line-height: 1.7;
+}
+
+.tract-description li {
+    margin-bottom: 0.5rem;
+}
+
+blockquote {
+    background: #f8f9fa;
+    border-left: 4px solid #3498db;
+    padding: 1.5rem;
+    margin: 2rem 0;
+    font-style: italic;
+    border-radius: 0 6px 6px 0;
+}
+
+.tract-specifications {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 12px;
+    margin-top: 2rem;
+}
+
+.tract-specifications h3 {
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+    margin-top: 0;
+}
+
+.spec-grid {
+    display: grid;
+    gap: 1rem;
+}
+
+.spec-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.8rem 0;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.spec-item:last-child {
+    border-bottom: none;
+}
+
+.spec-label {
+    font-weight: 600;
+    color: #666;
+}
+
+.spec-value {
+    color: #2c3e50;
+    font-weight: 500;
+}
+
+.download-section {
+    margin-bottom: 4rem;
+}
+
+.download-section h2 {
+    color: #2c3e50;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.download-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.download-card {
+    background: white;
+    border: 2px solid #f0f0f0;
+    border-radius: 12px;
+    padding: 2rem;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.download-card:hover {
+    border-color: #3498db;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.download-card-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.download-card h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.download-card p {
+    color: #666;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.printing-guide {
+    background: #f8f9fa;
+    padding: 3rem;
+    border-radius: 12px;
+    margin-bottom: 4rem;
+}
+
+.printing-guide h2 {
+    color: #2c3e50;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.printing-steps {
+    display: grid;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.step-card {
+    background: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.step-number {
+    background: #3498db;
+    color: white;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+.step-content h3 {
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+    margin-top: 0;
+}
+
+.step-content p {
+    color: #555;
+    margin-bottom: 0.5rem;
+}
+
+.step-content ul {
+    color: #555;
+    padding-left: 1.2rem;
+    margin: 0.5rem 0;
+}
+
+.step-content li {
+    margin-bottom: 0.3rem;
+}
+
+.printing-tip {
+    background: #e8f5e8;
+    border: 1px solid #27ae60;
+    border-radius: 6px;
+    padding: 1rem;
+    color: #1e5631;
+}
+
+.usage-section h2 {
+    color: #2c3e50;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.usage-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.usage-allowed,
+.usage-restricted {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+}
+
+.usage-allowed {
+    border: 2px solid #27ae60;
+}
+
+.usage-restricted {
+    border: 2px solid #e74c3c;
+}
+
+.usage-allowed h3 {
+    color: #27ae60;
+    margin-bottom: 1rem;
+    margin-top: 0;
+}
+
+.usage-restricted h3 {
+    color: #e74c3c;
+    margin-bottom: 1rem;
+    margin-top: 0;
+}
+
+.usage-allowed ul,
+.usage-restricted ul {
+    padding-left: 1.2rem;
+    line-height: 1.6;
+}
+
+.usage-allowed li {
+    color: #2d5a3d;
+    margin-bottom: 0.5rem;
+}
+
+.usage-restricted li {
+    color: #a94442;
+    margin-bottom: 0.5rem;
 }
 
 .download-options {
@@ -532,12 +881,57 @@ footer {
         justify-content: center;
     }
     
+    .view-tract-btn {
+        width: 100%;
+        justify-content: center;
+    }
+    
     .printing-instructions {
         margin-top: 1rem;
     }
     
     .instructions-content {
         padding: 0.8rem;
+    }
+    
+    /* Tract detail page responsive */
+    .tract-detail-hero h1 {
+        font-size: 2rem;
+    }
+    
+    .tract-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .tract-layout {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .tract-preview-large {
+        position: static;
+        order: -1;
+    }
+    
+    .download-cards {
+        grid-template-columns: 1fr;
+    }
+    
+    .usage-cards {
+        grid-template-columns: 1fr;
+    }
+    
+    .printing-guide {
+        padding: 2rem 1rem;
+    }
+    
+    .step-card {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .step-number {
+        margin: 0 auto 1rem;
     }
     
     .usage-guidelines {

@@ -167,11 +167,14 @@ main {
 .tract-card {
     background: #fff;
     border-radius: 12px;
-    padding: 2rem;
+    padding: 0;
     text-align: center;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
     border: 1px solid #f0f0f0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
 
 .tract-card:hover {
@@ -183,6 +186,35 @@ main {
     background: #f8f9fa;
     border-style: dashed;
     border-color: #ddd;
+    padding: 2rem;
+}
+
+.tract-preview {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    background: #f8f9fa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tract-preview img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.tract-card:hover .tract-preview img {
+    transform: scale(1.05);
+}
+
+.tract-content {
+    padding: 1.5rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 .tract-icon {
@@ -191,16 +223,17 @@ main {
     display: block;
 }
 
-.tract-card h3 {
+.tract-content h3 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
     color: #2c3e50;
 }
 
-.tract-card p {
+.tract-content p {
     color: #666;
     margin-bottom: 1.5rem;
     line-height: 1.6;
+    flex-grow: 1;
 }
 
 .tract-meta {
@@ -372,7 +405,19 @@ footer {
     }
     
     .tract-card {
+        padding: 0;
+    }
+    
+    .tract-card.coming-soon {
         padding: 1.5rem;
+    }
+    
+    .tract-content {
+        padding: 1.5rem;
+    }
+    
+    .tract-preview {
+        height: 200px;
     }
     
     .tract-meta {

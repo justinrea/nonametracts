@@ -22,6 +22,7 @@ header {
     top: 0;
     z-index: 1000;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
 }
 
 nav {
@@ -92,13 +93,16 @@ main {
     font-size: 1.1rem;
     border-radius: 5px;
     cursor: pointer;
-    transition: background 0.3s ease;
+    transition: all 0.3s ease;
     font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
 }
 
 .cta-button:hover {
     background: #c0392b;
     transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(231, 76, 60, 0.3);
 }
 
 /* Container for sections */
@@ -129,10 +133,166 @@ main {
     color: #555;
 }
 
+/* Tracts section */
+.tracts {
+    padding: 6rem 2rem;
+    background: white;
+}
+
+.tracts h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: #2c3e50;
+}
+
+.section-subtitle {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 4rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tracts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto 4rem;
+}
+
+.tract-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border: 1px solid #f0f0f0;
+}
+
+.tract-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.tract-card.coming-soon {
+    background: #f8f9fa;
+    border-style: dashed;
+    border-color: #ddd;
+}
+
+.tract-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.tract-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #2c3e50;
+}
+
+.tract-card p {
+    color: #666;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.tract-meta {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.tract-meta span {
+    background: #ecf0f1;
+    color: #7f8c8d;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.tract-status {
+    background: #fff3cd !important;
+    color: #856404 !important;
+}
+
+.download-btn {
+    background: #27ae60;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 6px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.download-btn:hover {
+    background: #219a52;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(39, 174, 96, 0.3);
+}
+
+.download-btn.disabled {
+    background: #bdc3c7;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
+
+.download-btn.disabled:hover {
+    background: #bdc3c7;
+    transform: none;
+    box-shadow: none;
+}
+
+.download-icon {
+    font-size: 1.1rem;
+}
+
+.usage-guidelines {
+    background: #f8f9fa;
+    border-radius: 10px;
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    border-left: 4px solid #3498db;
+}
+
+.usage-guidelines h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.usage-guidelines ul {
+    list-style: none;
+    padding: 0;
+}
+
+.usage-guidelines li {
+    padding: 0.5rem 0;
+    font-size: 1rem;
+    color: #555;
+}
+
 /* Contact section */
 .contact {
     padding: 6rem 2rem;
-    background: white;
+    background: #f8f9fa;
 }
 
 .contact h2 {
@@ -152,11 +312,19 @@ main {
 .contact-info {
     text-align: center;
     font-size: 1.1rem;
+    margin-bottom: 2rem;
 }
 
 .contact-info p {
-    margin: 0.5rem 0;
+    margin: 1rem 0;
     color: #333;
+    font-weight: 500;
+}
+
+.contact-form-note {
+    text-align: center;
+    font-size: 1rem;
+    color: #666;
 }
 
 /* Footer */
@@ -182,7 +350,8 @@ footer {
     }
     
     .about h2,
-    .contact h2 {
+    .contact h2,
+    .tracts h2 {
         font-size: 2rem;
     }
     
@@ -195,5 +364,28 @@ footer {
     .nav-links {
         flex-wrap: wrap;
         justify-content: center;
+    }
+    
+    .tracts-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .tract-card {
+        padding: 1.5rem;
+    }
+    
+    .tract-meta {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .usage-guidelines {
+        padding: 1.5rem;
+        margin: 0 1rem;
+    }
+    
+    .section-subtitle {
+        margin-bottom: 3rem;
     }
 }

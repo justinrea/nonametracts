@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-# No Name Tracts Website
+# No Name Tracts
 
 A simple, professional website for nonametracts.com
 
@@ -83,7 +82,3 @@ A simple, professional website for nonametracts.com
 ## Support
 
 For any questions about your domain setup, refer to Cloudflare's documentation or contact their support.
-=======
-# nonametracts
-No Name Tracts - A simple website project.
->>>>>>> 2ecf0d27448a99fe8493fb4fec4901fe30ba3a50

@@ -1,0 +1,16 @@
+{
+  "name": "No Name Tracts",
+  "short_name": "NNT",
+  "description": "No Name Tracts - Your journey starts here",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#2c3e50",
+  "theme_color": "#667eea",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "32x32",
+      "type": "image/x-icon"
+    }
+  ]
+}

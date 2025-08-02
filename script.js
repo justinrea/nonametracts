@@ -1,5 +1,7 @@
 // Smooth scrolling for navigation links
 document.addEventListener('DOMContentLoaded', function() {
+    console.log('DOM loaded, initializing mobile menu...');
+    
     // Mobile menu functionality
     const mobileMenuButton = document.getElementById('mobile-menu-button');
     const mobileMenu = document.getElementById('mobile-menu');
@@ -7,16 +9,30 @@ document.addEventListener('DOMContentLoaded', function() {
     const closeIcon = document.getElementById('close-icon');
     const mobileMenuLinks = document.querySelectorAll('.mobile-menu-link');
 
+    console.log('Elements found:', {
+        mobileMenuButton: !!mobileMenuButton,
+        mobileMenu: !!mobileMenu,
+        hamburgerIcon: !!hamburgerIcon,
+        closeIcon: !!closeIcon,
+        mobileMenuLinks: mobileMenuLinks.length
+    });
+
     if (mobileMenuButton && mobileMenu) {
-        mobileMenuButton.addEventListener('click', function() {
+        mobileMenuButton.addEventListener('click', function(e) {
+            e.preventDefault();
+            console.log('Mobile menu button clicked');
+            
             mobileMenu.classList.toggle('hidden');
             hamburgerIcon.classList.toggle('hidden');
             closeIcon.classList.toggle('hidden');
+            
+            console.log('Menu visible:', !mobileMenu.classList.contains('hidden'));
         });
 
         // Close mobile menu when clicking on a link
         mobileMenuLinks.forEach(link => {
             link.addEventListener('click', function() {
+                console.log('Mobile menu link clicked');
                 mobileMenu.classList.add('hidden');
                 hamburgerIcon.classList.remove('hidden');
                 closeIcon.classList.add('hidden');
@@ -31,6 +47,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 closeIcon.classList.add('hidden');
             }
         });
+    } else {
+        console.error('Mobile menu elements not found!');
     }
 
     // Smooth scrolling for anchor links

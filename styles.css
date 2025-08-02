@@ -260,9 +260,21 @@ main {
     font-weight: 500;
 }
 
+.tract-size {
+    background: #e8f5e8 !important;
+    color: #27ae60 !important;
+}
+
 .tract-status {
     background: #fff3cd !important;
     color: #856404 !important;
+}
+
+.download-options {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    margin-bottom: 1rem;
 }
 
 .download-btn {
@@ -274,16 +286,33 @@ main {
     text-decoration: none;
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     gap: 0.5rem;
     font-weight: 600;
     transition: all 0.3s ease;
     cursor: pointer;
+    text-align: center;
 }
 
-.download-btn:hover {
+.download-btn.primary {
+    background: #27ae60;
+}
+
+.download-btn.primary:hover {
     background: #219a52;
     transform: translateY(-2px);
     box-shadow: 0 4px 15px rgba(39, 174, 96, 0.3);
+}
+
+.download-btn.secondary {
+    background: #3498db;
+    font-size: 0.9rem;
+}
+
+.download-btn.secondary:hover {
+    background: #2980b9;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);
 }
 
 .download-btn.disabled {
@@ -297,6 +326,68 @@ main {
     background: #bdc3c7;
     transform: none;
     box-shadow: none;
+}
+
+.printing-instructions {
+    margin-top: 1rem;
+    border-top: 1px solid #ecf0f1;
+    padding-top: 1rem;
+}
+
+.printing-instructions details {
+    cursor: pointer;
+}
+
+.printing-instructions summary {
+    font-weight: 600;
+    color: #2c3e50;
+    padding: 0.5rem 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.printing-instructions summary::-webkit-details-marker {
+    display: none;
+}
+
+.printing-instructions summary::before {
+    content: "▶";
+    transition: transform 0.3s ease;
+    font-size: 0.8rem;
+}
+
+.printing-instructions details[open] summary::before {
+    transform: rotate(90deg);
+}
+
+.instructions-content {
+    background: #f8f9fa;
+    padding: 1rem;
+    border-radius: 6px;
+    margin-top: 0.5rem;
+    border-left: 3px solid #3498db;
+}
+
+.instructions-content p {
+    margin-bottom: 0.8rem;
+    color: #555;
+}
+
+.instructions-content ol {
+    margin: 0.8rem 0;
+    padding-left: 1.2rem;
+}
+
+.instructions-content li {
+    margin-bottom: 0.4rem;
+    color: #555;
+    line-height: 1.4;
+}
+
+.instructions-content strong {
+    color: #2c3e50;
 }
 
 .download-icon {
@@ -430,6 +521,23 @@ footer {
     .tract-meta {
         flex-direction: column;
         align-items: center;
+    }
+    
+    .download-options {
+        width: 100%;
+    }
+    
+    .download-btn {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .printing-instructions {
+        margin-top: 1rem;
+    }
+    
+    .instructions-content {
+        padding: 0.8rem;
     }
     
     .usage-guidelines {

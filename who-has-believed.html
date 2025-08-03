@@ -36,28 +36,9 @@
 </head>
 <body class="font-sans leading-relaxed text-gray-800 bg-white">
     <!-- Header -->
-    <header class="bg-white text-brand-dark py-4 fixed w-full top-0 z-50 shadow-lg transition-transform duration-300">
-        <nav class="flex justify-between items-center max-w-6xl mx-auto px-8">
-            <div class="logo flex items-center space-x-3">
-                <img src="images/no-name-logo.png" alt="No Name Tracts Logo" class="h-10 w-auto">
-                <h1 class="text-3xl font-semibold">
-                    <a href="index.html" class="text-brand-dark hover:text-brand-gray transition-colors duration-300">No Name Tracts</a>
-                </h1>
-            </div>
-            <ul class="hidden md:flex space-x-8">
-                <li><a href="index.html#home" class="font-medium transition-colors duration-300 hover:text-brand-gray">Home</a></li>
-                <li><a href="index.html#about" class="font-medium transition-colors duration-300 hover:text-brand-gray">About</a></li>
-                <li><a href="index.html#tracts" class="font-medium transition-colors duration-300 hover:text-brand-gray">Tracts</a></li>
-                <li><a href="index.html#contact" class="font-medium transition-colors duration-300 hover:text-brand-gray">Contact</a></li>
-            </ul>
-            <!-- Mobile menu button -->
-            <button class="md:hidden">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                </svg>
-            </button>
-        </nav>
-    </header>
+    <div id="header-container">
+        <!-- Header will be loaded here from header.html -->
+    </div>
 
     <main class="mt-20">
         <!-- Hero Section -->
@@ -229,65 +210,8 @@
                 </div>
                 
                 <!-- Usage Section -->
-                <div class="mb-16">
-                    <h2 class="text-3xl font-bold text-brand-dark mb-8 text-center">Usage & Distribution</h2>
-                    <div class="grid md:grid-cols-2 gap-8">
-                        <div class="bg-white border-2 border-green-200 rounded-xl p-8">
-                            <h3 class="text-xl font-bold text-green-700 mb-6 flex items-center gap-2">
-                                <span class="text-2xl">✅</span> Encouraged Uses
-                            </h3>
-                            <ul class="space-y-3 text-gray-700">
-                                <li class="flex items-start gap-3">
-                                    <span class="text-green-500 mt-1">•</span>
-                                    Personal evangelism and witnessing
-                                </li>
-                                <li class="flex items-start gap-3">
-                                    <span class="text-green-500 mt-1">•</span>
-                                    Church outreach programs
-                                </li>
-                                <li class="flex items-start gap-3">
-                                    <span class="text-green-500 mt-1">•</span>
-                                    Street evangelism and tract distribution
-                                </li>
-                                <li class="flex items-start gap-3">
-                                    <span class="text-green-500 mt-1">•</span>
-                                    Sharing with friends, family, and coworkers
-                                </li>
-                                <li class="flex items-start gap-3">
-                                    <span class="text-green-500 mt-1">•</span>
-                                    Digital sharing via email or social media
-                                </li>
-                                <li class="flex items-start gap-3">
-                                    <span class="text-green-500 mt-1">•</span>
-                                    Bulk printing for ministry use
-                                </li>
-                            </ul>
-                        </div>
-                        
-                        <div class="bg-white border-2 border-red-200 rounded-xl p-8">
-                            <h3 class="text-xl font-bold text-red-700 mb-6 flex items-center gap-2">
-                                <span class="text-2xl">❌</span> Please Don't
-                            </h3>
-                            <ul class="space-y-3 text-gray-700">
-                                <li class="flex items-start gap-3">
-                                    <span class="text-red-500 mt-1">•</span>
-                                    Modify or alter the content
-                                </li>
-                                <li class="flex items-start gap-3">
-                                    <span class="text-red-500 mt-1">•</span>
-                                    Sell or use for commercial purposes
-                                </li>
-                                <li class="flex items-start gap-3">
-                                    <span class="text-red-500 mt-1">•</span>
-                                    Remove or change attribution
-                                </li>
-                                <li class="flex items-start gap-3">
-                                    <span class="text-red-500 mt-1">•</span>
-                                    Use for purposes contrary to the Gospel
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+                <div id="usage-guidelines-container">
+                    <!-- Usage guidelines will be loaded here from usage-guidelines.html -->
                 </div>
             </div>
         </section>
@@ -299,5 +223,6 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="components.js"></script>
 </body>
 </html>

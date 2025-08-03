@@ -45,39 +45,9 @@
 </head>
 <body class="font-sans leading-relaxed text-gray-800 bg-white">
     <!-- Header -->
-    <header class="bg-white text-brand-dark py-4 fixed w-full top-0 z-50 shadow-lg transition-transform duration-300" x-data="{ mobileMenuOpen: false }">
-        <nav class="flex justify-between items-center max-w-6xl mx-auto px-8">
-            <div class="logo flex items-center space-x-3">
-                <img src="images/no-name-logo.png" alt="No Name Tracts Logo" class="h-10 w-auto">
-                <h1 class="text-3xl font-semibold">No Name Tracts</h1>
-            </div>
-            <ul class="hidden md:flex space-x-8">
-                <li><a href="#home" class="font-medium transition-colors duration-300 hover:text-brand-gray">Home</a></li>
-                <li><a href="#about" class="font-medium transition-colors duration-300 hover:text-brand-gray">About</a></li>
-                <li><a href="#tracts" class="font-medium transition-colors duration-300 hover:text-brand-gray">Tracts</a></li>
-                <li><a href="#contact" class="font-medium transition-colors duration-300 hover:text-brand-gray">Contact</a></li>
-            </ul>
-            <!-- Mobile menu button -->
-            <button @click="mobileMenuOpen = !mobileMenuOpen" class="md:hidden hover:text-brand-gray transition-colors duration-300">
-                <svg x-show="!mobileMenuOpen" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                </svg>
-                <svg x-show="mobileMenuOpen" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-                </svg>
-            </button>
-        </nav>
-        
-        <!-- Mobile menu -->
-        <div x-show="mobileMenuOpen" x-transition:enter="transition ease-out duration-200" x-transition:enter-start="opacity-0 transform -translate-y-2" x-transition:enter-end="opacity-100 transform translate-y-0" x-transition:leave="transition ease-in duration-150" x-transition:leave-start="opacity-100 transform translate-y-0" x-transition:leave-end="opacity-0 transform -translate-y-2" class="md:hidden bg-white border-t border-gray-200">
-            <div class="px-8 pt-2 pb-4 space-y-2">
-                <a href="#home" @click="mobileMenuOpen = false" class="block py-2 font-medium transition-colors duration-300 hover:text-brand-gray">Home</a>
-                <a href="#about" @click="mobileMenuOpen = false" class="block py-2 font-medium transition-colors duration-300 hover:text-brand-gray">About</a>
-                <a href="#tracts" @click="mobileMenuOpen = false" class="block py-2 font-medium transition-colors duration-300 hover:text-brand-gray">Tracts</a>
-                <a href="#contact" @click="mobileMenuOpen = false" class="block py-2 font-medium transition-colors duration-300 hover:text-brand-gray">Contact</a>
-            </div>
-        </div>
-    </header>
+    <div id="header-container">
+        <!-- Header will be loaded here from header.html -->
+    </div>
 
     <main class="mt-20">
         <!-- Hero Section -->
@@ -168,7 +138,7 @@
                             <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">Submit Ideas</span>
                         </div>
                         <a href="#contact" class="bg-brand-gray hover:bg-gray-700 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 inline-block">
-                            Contact Us
+                            Contact
                         </a>
                     </div>
                 </div>
@@ -195,5 +165,6 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="components.js"></script>
 </body>
 </html>

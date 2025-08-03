@@ -20,8 +20,9 @@
             theme: {
                 extend: {
                     colors: {
-                        'brand-blue': '#2c3e50',
-                        'brand-light-blue': '#3498db',
+                        'brand-dark': '#1a1a1a',
+                        'brand-gray': '#4a5568',
+                        'brand-light-gray': '#718096',
                         'brand-red': '#e74c3c',
                         'brand-red-dark': '#c0392b'
                     }
@@ -31,22 +32,23 @@
     </script>
     
     <link rel="canonical" href="https://nonametracts.com/who-has-believed.html">
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📖</text></svg>">
+    <link rel="icon" href="images/no-name-logo.png" type="image/png">
 </head>
 <body class="font-sans leading-relaxed text-gray-800 bg-white">
     <!-- Header -->
-    <header class="bg-brand-blue text-white py-4 fixed w-full top-0 z-50 shadow-lg transition-transform duration-300">
+    <header class="bg-white text-brand-dark py-4 fixed w-full top-0 z-50 shadow-lg transition-transform duration-300">
         <nav class="flex justify-between items-center max-w-6xl mx-auto px-8">
-            <div class="logo">
+            <div class="logo flex items-center space-x-3">
+                <img src="images/no-name-logo.png" alt="No Name Tracts Logo" class="h-10 w-auto">
                 <h1 class="text-3xl font-semibold">
-                    <a href="index.html" class="text-white hover:text-brand-light-blue transition-colors duration-300">No Name Tracts</a>
+                    <a href="index.html" class="text-brand-dark hover:text-brand-gray transition-colors duration-300">No Name Tracts</a>
                 </h1>
             </div>
             <ul class="hidden md:flex space-x-8">
-                <li><a href="index.html#home" class="font-medium transition-colors duration-300 hover:text-brand-light-blue">Home</a></li>
-                <li><a href="index.html#about" class="font-medium transition-colors duration-300 hover:text-brand-light-blue">About</a></li>
-                <li><a href="index.html#tracts" class="font-medium transition-colors duration-300 hover:text-brand-light-blue">Tracts</a></li>
-                <li><a href="index.html#contact" class="font-medium transition-colors duration-300 hover:text-brand-light-blue">Contact</a></li>
+                <li><a href="index.html#home" class="font-medium transition-colors duration-300 hover:text-brand-gray">Home</a></li>
+                <li><a href="index.html#about" class="font-medium transition-colors duration-300 hover:text-brand-gray">About</a></li>
+                <li><a href="index.html#tracts" class="font-medium transition-colors duration-300 hover:text-brand-gray">Tracts</a></li>
+                <li><a href="index.html#contact" class="font-medium transition-colors duration-300 hover:text-brand-gray">Contact</a></li>
             </ul>
             <!-- Mobile menu button -->
             <button class="md:hidden">
@@ -59,15 +61,15 @@
 
     <main class="mt-20">
         <!-- Hero Section -->
-        <section class="bg-gradient-to-br from-indigo-500 via-purple-600 to-purple-700 text-white py-32 px-8">
+        <section class="bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white py-32 px-8">
             <div class="max-w-6xl mx-auto">
-                <nav class="text-sm mb-4 opacity-90">
+                <nav class="text-sm mb-4 text-gray-300">
                     <a href="index.html" class="hover:underline">Home</a> → 
                     <a href="index.html#tracts" class="hover:underline">Tracts</a> → 
                     <span>Who Has Believed</span>
                 </nav>
                 <h1 class="text-5xl md:text-6xl font-bold mb-4">Who Has Believed</h1>
-                <p class="text-xl md:text-2xl opacity-90">A Gospel Tract Based on Isaiah 53</p>
+                <p class="text-xl md:text-2xl text-gray-300">An Ancient Story of Suffering That Impacts You Today</p>
             </div>
         </section>
 
@@ -86,66 +88,108 @@
                     <!-- Tract Info -->
                     <div class="lg:col-span-3 space-y-8">
                         <div>
-                            <h2 class="text-3xl font-bold text-brand-blue mb-6">About This Tract</h2>
+                            <h2 class="text-3xl font-bold text-brand-dark mb-6">About This Tract</h2>
                             <div class="prose prose-lg max-w-none text-gray-700 space-y-4">
-                                <p>This powerful gospel tract explores the profound message of salvation found in Isaiah 53. Through careful exposition of this messianic prophecy, readers are led to understand the suffering servant's role in our redemption and the importance of believing in Jesus Christ.</p>
+                                <p>This thoughtfully written tract explores one of the most powerful prophecies in the Old Testament—Isaiah 53. Written centuries before Christ's birth, this "Suffering Servant" passage provides remarkable detail about Jesus' sacrificial death and its meaning for humanity.</p>
                                 
-                                <p>The tract presents the gospel message clearly and compassionately, making it perfect for personal evangelism, church outreach programs, and sharing with friends and family who need to hear the good news.</p>
+                                <p>Through careful examination of Isaiah's ancient prophecy and its precise fulfillment in Jesus Christ, readers are invited to consider the evidence and respond to the question that echoes through time: "Who has believed our report?"</p>
                             </div>
                             
                             <div class="mt-8">
-                                <h3 class="text-xl font-bold text-brand-blue mb-4">Key Scripture Focus</h3>
-                                <blockquote class="bg-gray-50 border-l-4 border-brand-light-blue p-6 rounded-r-lg italic text-lg text-gray-700">
-                                    "Who has believed our message and to whom has the arm of the Lord been revealed?" - Isaiah 53:1
+                                <h3 class="text-xl font-bold text-brand-dark mb-4">The Central Question</h3>
+                                <blockquote class="bg-gray-50 border-l-4 border-brand-gray p-6 rounded-r-lg italic text-lg text-gray-700">
+                                    "Who has believed our report? And to whom has the arm of the Lord been revealed?" - Isaiah 53:1
                                 </blockquote>
                             </div>
                             
                             <div class="mt-8">
-                                <h3 class="text-xl font-bold text-brand-blue mb-4">What's Inside</h3>
-                                <ul class="space-y-2 text-gray-700">
+                                <h3 class="text-xl font-bold text-brand-dark mb-4">Key Arguments Presented</h3>
+                                <ul class="space-y-3 text-gray-700">
                                     <li class="flex items-start gap-3">
-                                        <span class="text-green-500 mt-1">•</span>
-                                        Clear explanation of Isaiah 53's messianic prophecy
+                                        <span class="text-brand-gray mt-1 font-bold">•</span>
+                                        <div>
+                                            <strong>Prophetic Authenticity:</strong> How Isaiah's book has stood the test of time for nearly 3,000 years, preserved because of its perceived divine value
+                                        </div>
                                     </li>
                                     <li class="flex items-start gap-3">
-                                        <span class="text-green-500 mt-1">•</span>
-                                        The significance of Christ's suffering for our salvation
+                                        <span class="text-brand-gray mt-1 font-bold">•</span>
+                                        <div>
+                                            <strong>Divine Prediction:</strong> God's unique ability to "declare the end from the beginning" (Isaiah 46:9-10), demonstrated through centuries-spanning prophecy
+                                        </div>
                                     </li>
                                     <li class="flex items-start gap-3">
-                                        <span class="text-green-500 mt-1">•</span>
-                                        Personal application and call to faith
+                                        <span class="text-brand-gray mt-1 font-bold">•</span>
+                                        <div>
+                                            <strong>Detailed Fulfillment:</strong> Specific prophecies about the Suffering Servant's appearance, rejection, and manner of death, precisely fulfilled in Jesus
+                                        </div>
                                     </li>
                                     <li class="flex items-start gap-3">
-                                        <span class="text-green-500 mt-1">•</span>
-                                        Scripture references throughout
+                                        <span class="text-brand-gray mt-1 font-bold">•</span>
+                                        <div>
+                                            <strong>Substitutionary Purpose:</strong> Why the Servant had to suffer—bearing "our transgressions" and "our iniquities" as a substitute for sinners
+                                        </div>
                                     </li>
                                     <li class="flex items-start gap-3">
-                                        <span class="text-green-500 mt-1">•</span>
-                                        Gospel presentation suitable for all audiences
+                                        <span class="text-brand-gray mt-1 font-bold">•</span>
+                                        <div>
+                                            <strong>Universal Need:</strong> "All we like sheep have gone astray"—the reality that everyone needs this salvation
+                                        </div>
+                                    </li>
+                                    <li class="flex items-start gap-3">
+                                        <span class="text-brand-gray mt-1 font-bold">•</span>
+                                        <div>
+                                            <strong>Resurrection Hope:</strong> The prophecy that the Servant would "prolong His days" after His sacrifice
+                                        </div>
                                     </li>
                                 </ul>
+                            </div>
+
+                            <div class="mt-8">
+                                <h3 class="text-xl font-bold text-brand-dark mb-4">Isaiah 53 Highlights</h3>
+                                <div class="bg-white border border-gray-200 rounded-lg p-6 space-y-4">
+                                    <div class="grid md:grid-cols-2 gap-4 text-sm">
+                                        <div>
+                                            <h4 class="font-semibold text-brand-gray mb-2">Prophecy (Isaiah 53)</h4>
+                                            <ul class="space-y-1 text-gray-600">
+                                                <li>• "His visage was marred more than any man" (52:14)</li>
+                                                <li>• "Despised and rejected by men" (53:3)</li>
+                                                <li>• "Wounded for our transgressions" (53:5)</li>
+                                                <li>• "Cut off from the land of the living" (53:8)</li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <h4 class="font-semibold text-brand-gray mb-2">Fulfillment (Jesus Christ)</h4>
+                                            <ul class="space-y-1 text-gray-600">
+                                                <li>• Scourged beyond recognition</li>
+                                                <li>• Rejected by His own people</li>
+                                                <li>• Crucified as our substitute</li>
+                                                <li>• Died and rose again</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         
                         <!-- Specifications -->
                         <div class="bg-gray-50 rounded-xl p-6">
-                            <h3 class="text-xl font-bold text-brand-blue mb-4">Specifications</h3>
+                            <h3 class="text-xl font-bold text-brand-dark mb-4">Specifications</h3>
                             <div class="grid grid-cols-2 gap-4">
                                 <div class="flex justify-between py-2 border-b border-gray-200">
                                     <span class="font-medium text-gray-600">Size:</span>
-                                    <span class="text-brand-blue font-medium">3.5" × 5.5"</span>
+                                    <span class="text-brand-dark font-medium">3.5" × 5.5"</span>
                                 </div>
                                 <div class="flex justify-between py-2 border-b border-gray-200">
                                     <span class="font-medium text-gray-600">Format:</span>
-                                    <span class="text-brand-blue font-medium">PDF</span>
+                                    <span class="text-brand-dark font-medium">PDF</span>
                                 </div>
                                 <div class="flex justify-between py-2 border-b border-gray-200">
                                     <span class="font-medium text-gray-600">Pages:</span>
-                                    <span class="text-brand-blue font-medium">Multi-page</span>
+                                    <span class="text-brand-dark font-medium">Multi-page</span>
                                 </div>
                                 <div class="flex justify-between py-2 border-b border-gray-200">
                                     <span class="font-medium text-gray-600">Type:</span>
-                                    <span class="text-brand-blue font-medium">Mini Booklet</span>
+                                    <span class="text-brand-dark font-medium">Mini Booklet</span>
                                 </div>
                             </div>
                         </div>
@@ -154,24 +198,20 @@
                 
                 <!-- Download Section -->
                 <div class="mb-16">
-                    <h2 class="text-3xl font-bold text-brand-blue mb-8 text-center">Download Options</h2>
+                    <h2 class="text-3xl font-bold text-brand-dark mb-8 text-center">Download Options</h2>
                     <div class="grid md:grid-cols-2 gap-8">
                         <div class="bg-white rounded-xl shadow-lg border border-gray-100 p-8 text-center hover:shadow-2xl transition-shadow duration-300">
-                            <div class="text-6xl mb-4">📄</div>
-                            <h3 class="text-xl font-bold text-brand-blue mb-4">Standard PDF</h3>
+                            <h3 class="text-xl font-bold text-brand-dark mb-4">Standard PDF</h3>
                             <p class="text-gray-600 mb-6 leading-relaxed">Perfect for digital viewing or reviewing page order before printing. Use this version to see how the tract flows and reads.</p>
-                            <a href="downloads/Who Has Believed Final.pdf" class="inline-flex items-center gap-2 bg-brand-light-blue hover:bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg" download>
-                                <span>⬇</span>
+                            <a href="downloads/Who Has Believed Final.pdf" class="inline-flex items-center gap-2 bg-brand-gray hover:bg-gray-700 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg" download>
                                 Download Standard PDF
                             </a>
                         </div>
                         
                         <div class="bg-white rounded-xl shadow-lg border border-gray-100 p-8 text-center hover:shadow-2xl transition-shadow duration-300">
-                            <div class="text-6xl mb-4">🖨</div>
-                            <h3 class="text-xl font-bold text-brand-blue mb-4">Print-Ready (Imposed)</h3>
+                            <h3 class="text-xl font-bold text-brand-dark mb-4">Print-Ready (Imposed)</h3>
                             <p class="text-gray-600 mb-6 leading-relaxed">Specially arranged for creating mini booklets. Pages are positioned for proper assembly after printing and folding.</p>
-                            <a href="impositions/Who Has Believed Final Imposed.pdf" class="inline-flex items-center gap-2 bg-gray-600 hover:bg-gray-700 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg" download>
-                                <span>🖨</span>
+                            <a href="impositions/Who Has Believed Final Imposed.pdf" class="inline-flex items-center gap-2 bg-brand-red hover:bg-brand-red-dark text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg" download>
                                 Download Print-Ready
                             </a>
                         </div>
@@ -180,41 +220,41 @@
                 
                 <!-- Printing Guide -->
                 <div class="bg-gray-50 rounded-xl p-8 mb-16">
-                    <h2 class="text-3xl font-bold text-brand-blue mb-8 text-center">📋 Complete Printing & Assembly Guide</h2>
+                    <h2 class="text-3xl font-bold text-brand-dark mb-8 text-center">Complete Printing & Assembly Guide</h2>
                     
                     <div class="space-y-6 mb-8">
                         <div class="bg-white rounded-lg p-6 shadow-sm flex items-start gap-4">
-                            <div class="bg-brand-light-blue text-white w-10 h-10 rounded-full flex items-center justify-center font-bold text-lg flex-shrink-0">1</div>
+                            <div class="bg-brand-gray text-white w-10 h-10 rounded-full flex items-center justify-center font-bold text-lg flex-shrink-0">1</div>
                             <div>
-                                <h3 class="text-lg font-bold text-brand-blue mb-2">Review First</h3>
+                                <h3 class="text-lg font-bold text-brand-dark mb-2">Review First</h3>
                                 <p class="text-gray-700">Download and review the <strong>Standard PDF</strong> to ensure the pages are in the correct order and the content reads properly.</p>
                             </div>
                         </div>
                         
                         <div class="bg-white rounded-lg p-6 shadow-sm flex items-start gap-4">
-                            <div class="bg-brand-light-blue text-white w-10 h-10 rounded-full flex items-center justify-center font-bold text-lg flex-shrink-0">2</div>
+                            <div class="bg-brand-gray text-white w-10 h-10 rounded-full flex items-center justify-center font-bold text-lg flex-shrink-0">2</div>
                             <div>
-                                <h3 class="text-lg font-bold text-brand-blue mb-2">Print Setup</h3>
+                                <h3 class="text-lg font-bold text-brand-dark mb-2">Print Setup</h3>
                                 <p class="text-gray-700 mb-3">Use the <strong>Print-Ready (Imposed)</strong> version with these printer settings:</p>
                                 <ul class="space-y-1 text-gray-700 ml-4">
                                     <li class="flex items-start gap-2">
-                                        <span class="text-brand-light-blue mt-1">•</span>
+                                        <span class="text-brand-gray mt-1">•</span>
                                         Quality 8.5" × 11" paper
                                     </li>
                                     <li class="flex items-start gap-2">
-                                        <span class="text-brand-light-blue mt-1">•</span>
+                                        <span class="text-brand-gray mt-1">•</span>
                                         <strong>"Fit to printable area"</strong>
                                     </li>
                                     <li class="flex items-start gap-2">
-                                        <span class="text-brand-light-blue mt-1">•</span>
+                                        <span class="text-brand-gray mt-1">•</span>
                                         <strong>"Print on both sides"</strong> (duplex)
                                     </li>
                                     <li class="flex items-start gap-2">
-                                        <span class="text-brand-light-blue mt-1">•</span>
+                                        <span class="text-brand-gray mt-1">•</span>
                                         <strong>"Flip on long edge"</strong>
                                     </li>
                                     <li class="flex items-start gap-2">
-                                        <span class="text-brand-light-blue mt-1">•</span>
+                                        <span class="text-brand-gray mt-1">•</span>
                                         <strong>"Collate"</strong> enabled
                                     </li>
                                 </ul>
@@ -222,21 +262,21 @@
                         </div>
                         
                         <div class="bg-white rounded-lg p-6 shadow-sm flex items-start gap-4">
-                            <div class="bg-brand-light-blue text-white w-10 h-10 rounded-full flex items-center justify-center font-bold text-lg flex-shrink-0">3</div>
+                            <div class="bg-brand-gray text-white w-10 h-10 rounded-full flex items-center justify-center font-bold text-lg flex-shrink-0">3</div>
                             <div>
-                                <h3 class="text-lg font-bold text-brand-blue mb-2">Cut, Fold & Staple</h3>
+                                <h3 class="text-lg font-bold text-brand-dark mb-2">Cut, Fold & Staple</h3>
                                 <p class="text-gray-700 mb-3">After printing:</p>
                                 <ul class="space-y-1 text-gray-700 ml-4">
                                     <li class="flex items-start gap-2">
-                                        <span class="text-brand-light-blue mt-1">•</span>
+                                        <span class="text-brand-gray mt-1">•</span>
                                         Cut along the guidelines to separate booklets
                                     </li>
                                     <li class="flex items-start gap-2">
-                                        <span class="text-brand-light-blue mt-1">•</span>
+                                        <span class="text-brand-gray mt-1">•</span>
                                         Fold each booklet in half along the center line
                                     </li>
                                     <li class="flex items-start gap-2">
-                                        <span class="text-brand-light-blue mt-1">•</span>
+                                        <span class="text-brand-gray mt-1">•</span>
                                         Staple in the center fold to secure pages
                                     </li>
                                 </ul>
@@ -245,13 +285,13 @@
                     </div>
                     
                     <div class="bg-green-50 border border-green-200 rounded-lg p-4">
-                        <p class="text-green-800"><strong>💡 Pro Tip:</strong> The imposed version arranges pages so that when folded and stapled, the tract reads in the correct order. Always use the standard PDF first to verify content before printing multiple copies.</p>
+                        <p class="text-green-800"><strong>Pro Tip:</strong> The imposed version arranges pages so that when folded and stapled, the tract reads in the correct order. Always use the standard PDF first to verify content before printing multiple copies.</p>
                     </div>
                 </div>
                 
                 <!-- Usage Section -->
                 <div class="mb-16">
-                    <h2 class="text-3xl font-bold text-brand-blue mb-8 text-center">Usage & Distribution</h2>
+                    <h2 class="text-3xl font-bold text-brand-dark mb-8 text-center">Usage & Distribution</h2>
                     <div class="grid md:grid-cols-2 gap-8">
                         <div class="bg-white border-2 border-green-200 rounded-xl p-8">
                             <h3 class="text-xl font-bold text-green-700 mb-6 flex items-center gap-2">
@@ -315,7 +355,7 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-brand-blue text-white py-8 px-8 text-center">
+    <footer class="bg-brand-dark text-white py-8 px-8 text-center">
         <p class="text-gray-300">&copy; 2025 No Name Tracts. All rights reserved. Sharing the Gospel through literature.</p>
     </footer>
 

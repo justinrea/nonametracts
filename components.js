@@ -6,6 +6,10 @@ function loadHeader() {
             const container = document.getElementById('header-container');
             if (container) {
                 container.innerHTML = html;
+                // Re-initialize Alpine.js for the new content if Alpine is loaded
+                if (window.Alpine) {
+                    window.Alpine.initTree(container);
+                }
             }
         })
         .catch(error => {
@@ -31,4 +35,11 @@ function loadUsageGuidelines() {
 document.addEventListener('DOMContentLoaded', function() {
     loadHeader();
     loadUsageGuidelines();
+    
+    // If Alpine.js is already loaded, wait for it to be ready
+    if (window.Alpine) {
+        document.addEventListener('alpine:init', () => {
+            // Alpine is ready
+        });
+    }
 });

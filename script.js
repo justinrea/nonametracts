@@ -80,11 +80,8 @@ document.addEventListener('DOMContentLoaded', function() {
             const tractName = this.closest('.tract-card').querySelector('h3').textContent;
             console.log(`Downloaded: ${tractName}`);
             
-            // You can add Google Analytics tracking here if needed
-            // gtag('event', 'download', {
-            //     'event_category': 'tract',
-            //     'event_label': tractName
-            // });
+            // Track download with Google Analytics
+            trackDownload(tractName, 'pdf');
         });
     });
     
@@ -128,5 +125,22 @@ document.addEventListener('DOMContentLoaded', function() {
         section.style.transform = 'translateY(30px)';
         section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
         observer.observe(section);
+    });
+    
+    // Track email contact clicks
+    const emailLinks = document.querySelectorAll('a[href^="mailto:"]');
+    emailLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            trackContact('email');
+        });
+    });
+    
+    // Track navigation clicks
+    const navLinks = document.querySelectorAll('a[href^="#"]');
+    navLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            const section = this.getAttribute('href').substring(1);
+            trackNavigation(section);
+        });
     });
 });
